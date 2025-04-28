@@ -39,6 +39,14 @@ app.get("/landing", (req, res) => {
     res.render("landing");
 });
 
+app.get("/admin", (req, res) => {
+  res.render("admin/admin"); // Adjusted to reflect the subfolder structure
+});
+
+app.get("/janitordash", (req, res) => {
+  res.render("janitors/janitordash"); // Adjusted to reflect the subfolder structure
+});
+
 app.get('/login', (req, res) => {
   res.render('login', { errorMessage: null });
 });
